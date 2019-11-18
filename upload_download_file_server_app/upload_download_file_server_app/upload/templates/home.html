@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="center">
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th><a href="{% url 'simple_upload' %}">Upload File</a></th>
+          </tr>
+          <tr>
+            <th><a href="{% url 'simple_download' %}">Download File</a></th>
+          </tr>
+        </thead>
+        </table>
+</div>
+
+{% endblock %}

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container">
+      <table class="table">
+        <thead class="thead-inverse">
+          <tr>
+            <th>Filename</th>
+            <th>Date</th>
+          </tr>
+        </thead>
+
+  {% if list_of_files %}
+    {% for files,time in list_of_files.items %}
+    <tr>
+              <td>
+        <p><a href="{{ files }}">{{ files }}</a></p>
+                      </td>
+              <td class="align-middle">
+
+        <p>{{ time }}</p>
+        </td>
+    {% endfor %}
+  {% endif %}
+        </table>
+    </div>
+
+
+{% endblock %}

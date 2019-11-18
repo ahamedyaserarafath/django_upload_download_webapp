@@ -1,0 +1,12 @@
+.center {
+    margin: auto;
+    width: 60%;
+    padding: 100px;
+  }
+
+  .center_with_width {
+    margin: auto;
+    width: 60%;
+    border: 3px solid rgb(1, 253, 241);
+    padding: 100px;
+  }
